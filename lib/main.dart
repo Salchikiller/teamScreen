@@ -14,6 +14,12 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.black.withOpacity(0.8),
           toolbarHeight: 50,
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back),
+            onPressed: () {
+              // TODO: TODO Samuel has que sirva para la navigation to the previous screen
+            },
+          ),
         ),
         extendBodyBehindAppBar: true,
         body: Stack(
@@ -25,7 +31,7 @@ class MyApp extends StatelessWidget {
               width: double.infinity,
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 77),
+              padding: const EdgeInsets.only(top: 55), // Adjusted top padding
               child: Center(
                 child: Container(
                   width: 305,
@@ -48,7 +54,60 @@ class MyApp extends StatelessWidget {
                             color: const Color(0x33FFFFFF),
                             width: 1,
                           ),
-                          children:
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              'Name',
+                              style: TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const SizedBox(height: 4),
+                            Text(
+                              'Role',
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const SizedBox(height: 4),
+                            Text(
+                              'email@example.com',
+                              style: TextStyle(
+                                fontSize: 12,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const SizedBox(height: 2),
+                            ElevatedButton(
+                              onPressed: () {
+                                // TODO: Samuel has que sirva
+                              },
+                              child: Text(
+                                'Info',
+                                style: TextStyle(
+                                  fontSize: 12,
+                                ),
+                              ),
+                              style: ElevatedButton.styleFrom(
+                                primary: const Color(0x48319D80),
+                                onPrimary: Colors.white,
+                                fixedSize: Size(73, 16),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(30),
+                                  side: BorderSide(
+                                    color: const Color(0x33FFFFFF),
+                                    width: 1,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                       const SizedBox(height: 16),
@@ -63,18 +122,59 @@ class MyApp extends StatelessWidget {
                             width: 1,
                           ),
                         ),
-                      ),
-                      const SizedBox(height: 16),
-                      Container(
-                        width: 235,
-                        height: 117,
-                        decoration: BoxDecoration(
-                          color: const Color(0x8048319D),
-                          borderRadius: BorderRadius.circular(30),
-                          border: Border.all(
-                            color: const Color(0x33FFFFFF),
-                            width: 1,
-                          ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              'Name',
+                              style: TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const SizedBox(height: 4),
+                            Text(
+                              'Role',
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const SizedBox(height: 4),
+                            Text(
+                              'email@example.com',
+                              style: TextStyle(
+                                fontSize: 12,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const SizedBox(height: 2),
+                            ElevatedButton(
+                              onPressed: () {
+                                // TODO: TODO Samuel has que sirva
+                              },
+                              child: Text(
+                                'Info',
+                                style: TextStyle(
+                                  fontSize: 12,
+                                ),
+                              ),
+                              style: ElevatedButton.styleFrom(
+                                primary: const Color(0x48319D80),
+                                onPrimary: Colors.white,
+                                fixedSize: Size(73, 16),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(30),
+                                  side: BorderSide(
+                                    color: const Color(0x33FFFFFF),
+                                    width: 1,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                       const SizedBox(height: 16),
@@ -89,8 +189,129 @@ class MyApp extends StatelessWidget {
                             width: 1,
                           ),
                         ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              'Name',
+                              style: TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const SizedBox(height: 4),
+                            Text(
+                              'Role',
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const SizedBox(height: 4),
+                            Text(
+                              'email@example.com',
+                              style: TextStyle(
+                                fontSize: 12,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const SizedBox(height: 2),
+                            ElevatedButton(
+                              onPressed: () {
+                                // TODO: Samuel has que sirva
+                              },
+                              child: Text(
+                                'Info',
+                                style: TextStyle(
+                                  fontSize: 12,
+                                ),
+                              ),
+                              style: ElevatedButton.styleFrom(
+                                primary: const Color(0x48319D80),
+                                onPrimary: Colors.white,
+                                fixedSize: Size(73, 16),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(30),
+                                  side: BorderSide(
+                                    color: const Color(0x33FFFFFF),
+                                    width: 1,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
-                      SizedBox(height: 63),
+                      const SizedBox(height: 16),
+                      Container(
+                        width: 235,
+                        height: 117,
+                        decoration: BoxDecoration(
+                          color: const Color(0x8048319D),
+                          borderRadius: BorderRadius.circular(30),
+                          border: Border.all(
+                            color: const Color(0x33FFFFFF),
+                            width: 1,
+                          ),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              'Name',
+                              style: TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const SizedBox(height: 4),
+                            Text(
+                              'Role',
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const SizedBox(height: 4),
+                            Text(
+                              'email@example.com',
+                              style: TextStyle(
+                                fontSize: 12,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const SizedBox(height: 2),
+                            ElevatedButton(
+                              onPressed: () {
+                                // TODO Samuel has que sirva
+                              },
+                              child: Text(
+                                'Info',
+                                style: TextStyle(
+                                  fontSize: 12,
+                                ),
+                              ),
+                              style: ElevatedButton.styleFrom(
+                                primary: const Color(0x48319D80),
+                                onPrimary: Colors.white,
+                                fixedSize: Size(73, 16),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(30),
+                                  side: BorderSide(
+                                    color: const Color(0x33FFFFFF),
+                                    width: 1,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(height: 57),
                     ],
                   ),
                 ),
@@ -98,11 +319,11 @@ class MyApp extends StatelessWidget {
             ),
             Positioned(
               left: 110,
-              top: 70 / 2, // Half of the height of the main container
+              top: 50 / 2, //
               child: Image.asset(
-                'assets/Background/team.png', // Replace with your own image path
-                width: 200, // Set the width as needed
-                height: 200, // Set the height as needed
+                'assets/Background/team.png',
+                width: 200,
+                height: 200,
               ),
             ),
           ],

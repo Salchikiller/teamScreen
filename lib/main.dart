@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
               width: double.infinity,
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 55), // Adjusted top padding
+              padding: const EdgeInsets.only(top: 55),
               child: Center(
                 child: Container(
                   width: 305,
@@ -44,273 +44,13 @@ class MyApp extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       const SizedBox(height: 16),
-                      Container(
-                        width: 235,
-                        height: 117,
-                        decoration: BoxDecoration(
-                          color: const Color(0x8048319D),
-                          borderRadius: BorderRadius.circular(30),
-                          border: Border.all(
-                            color: const Color(0x33FFFFFF),
-                            width: 1,
-                          ),
-                        ),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              'Name',
-                              style: TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                              ),
-                            ),
-                            const SizedBox(height: 4),
-                            Text(
-                              'Role',
-                              style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                              ),
-                            ),
-                            const SizedBox(height: 4),
-                            Text(
-                              'email@example.com',
-                              style: TextStyle(
-                                fontSize: 12,
-                                color: Colors.white,
-                              ),
-                            ),
-                            const SizedBox(height: 2),
-                            ElevatedButton(
-                              onPressed: () {
-                                // TODO: Samuel has que sirva
-                              },
-                              child: Text(
-                                'Info',
-                                style: TextStyle(
-                                  fontSize: 12,
-                                ),
-                              ),
-                              style: ElevatedButton.styleFrom(
-                                primary: const Color(0x48319D80),
-                                onPrimary: Colors.white,
-                                fixedSize: Size(73, 16),
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(30),
-                                  side: BorderSide(
-                                    color: const Color(0x33FFFFFF),
-                                    width: 1,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
+                      buildContainer(),
                       const SizedBox(height: 16),
-                      Container(
-                        width: 235,
-                        height: 117,
-                        decoration: BoxDecoration(
-                          color: const Color(0x8048319D),
-                          borderRadius: BorderRadius.circular(30),
-                          border: Border.all(
-                            color: const Color(0x33FFFFFF),
-                            width: 1,
-                          ),
-                        ),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              'Name',
-                              style: TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                              ),
-                            ),
-                            const SizedBox(height: 4),
-                            Text(
-                              'Role',
-                              style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                              ),
-                            ),
-                            const SizedBox(height: 4),
-                            Text(
-                              'email@example.com',
-                              style: TextStyle(
-                                fontSize: 12,
-                                color: Colors.white,
-                              ),
-                            ),
-                            const SizedBox(height: 2),
-                            ElevatedButton(
-                              onPressed: () {
-                                // TODO: TODO Samuel has que sirva
-                              },
-                              child: Text(
-                                'Info',
-                                style: TextStyle(
-                                  fontSize: 12,
-                                ),
-                              ),
-                              style: ElevatedButton.styleFrom(
-                                primary: const Color(0x48319D80),
-                                onPrimary: Colors.white,
-                                fixedSize: Size(73, 16),
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(30),
-                                  side: BorderSide(
-                                    color: const Color(0x33FFFFFF),
-                                    width: 1,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
+                      buildContainer(),
                       const SizedBox(height: 16),
-                      Container(
-                        width: 235,
-                        height: 117,
-                        decoration: BoxDecoration(
-                          color: const Color(0x8048319D),
-                          borderRadius: BorderRadius.circular(30),
-                          border: Border.all(
-                            color: const Color(0x33FFFFFF),
-                            width: 1,
-                          ),
-                        ),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              'Name',
-                              style: TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                              ),
-                            ),
-                            const SizedBox(height: 4),
-                            Text(
-                              'Role',
-                              style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                              ),
-                            ),
-                            const SizedBox(height: 4),
-                            Text(
-                              'email@example.com',
-                              style: TextStyle(
-                                fontSize: 12,
-                                color: Colors.white,
-                              ),
-                            ),
-                            const SizedBox(height: 2),
-                            ElevatedButton(
-                              onPressed: () {
-                                // TODO: Samuel has que sirva
-                              },
-                              child: Text(
-                                'Info',
-                                style: TextStyle(
-                                  fontSize: 12,
-                                ),
-                              ),
-                              style: ElevatedButton.styleFrom(
-                                primary: const Color(0x48319D80),
-                                onPrimary: Colors.white,
-                                fixedSize: Size(73, 16),
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(30),
-                                  side: BorderSide(
-                                    color: const Color(0x33FFFFFF),
-                                    width: 1,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
+                      buildContainer(),
                       const SizedBox(height: 16),
-                      Container(
-                        width: 235,
-                        height: 117,
-                        decoration: BoxDecoration(
-                          color: const Color(0x8048319D),
-                          borderRadius: BorderRadius.circular(30),
-                          border: Border.all(
-                            color: const Color(0x33FFFFFF),
-                            width: 1,
-                          ),
-                        ),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              'Name',
-                              style: TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                              ),
-                            ),
-                            const SizedBox(height: 4),
-                            Text(
-                              'Role',
-                              style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                              ),
-                            ),
-                            const SizedBox(height: 4),
-                            Text(
-                              'email@example.com',
-                              style: TextStyle(
-                                fontSize: 12,
-                                color: Colors.white,
-                              ),
-                            ),
-                            const SizedBox(height: 2),
-                            ElevatedButton(
-                              onPressed: () {
-                                // TODO Samuel has que sirva
-                              },
-                              child: Text(
-                                'Info',
-                                style: TextStyle(
-                                  fontSize: 12,
-                                ),
-                              ),
-                              style: ElevatedButton.styleFrom(
-                                primary: const Color(0x48319D80),
-                                onPrimary: Colors.white,
-                                fixedSize: Size(73, 16),
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(30),
-                                  side: BorderSide(
-                                    color: const Color(0x33FFFFFF),
-                                    width: 1,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
+                      buildContainer(),
                       SizedBox(height: 57),
                     ],
                   ),
@@ -319,7 +59,7 @@ class MyApp extends StatelessWidget {
             ),
             Positioned(
               left: 110,
-              top: 50 / 2, //
+              top: 50 / 2,
               child: Image.asset(
                 'assets/Background/team.png',
                 width: 200,
@@ -328,6 +68,75 @@ class MyApp extends StatelessWidget {
             ),
           ],
         ),
+      ),
+    );
+  }
+
+  Widget buildContainer() {
+    return Container(
+      width: 235,
+      height: 117,
+      decoration: BoxDecoration(
+        color: const Color(0x8048319D),
+        borderRadius: BorderRadius.circular(30),
+        border: Border.all(
+          color: const Color(0x33FFFFFF),
+          width: 1,
+        ),
+      ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(
+            'Name',
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+            ),
+          ),
+          const SizedBox(height: 4),
+          Text(
+            'Role',
+            style: TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+            ),
+          ),
+          const SizedBox(height: 4),
+          Text(
+            'email@example.com',
+            style: TextStyle(
+              fontSize: 12,
+              color: Colors.white,
+            ),
+          ),
+          const SizedBox(height: 2),
+          ElevatedButton(
+            onPressed: () {
+              // TODO: Implement functionality
+            },
+            child: Text(
+              'Info',
+              style: TextStyle(
+                fontSize: 12,
+              ),
+            ),
+            style: ElevatedButton.styleFrom(
+              primary: const Color(0x48319D80),
+              onPrimary: Colors.white,
+              fixedSize: Size(73, 16),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(30),
+                side: BorderSide(
+                  color: const Color(0x33FFFFFF),
+                  width: 1,
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
